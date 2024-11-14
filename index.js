@@ -16,7 +16,7 @@ function gerarFaturaStr (fatura, pecas) {
     function calcularTotalFatura() {
       let totalFatura = 0;
       for (let apre of fatura.apresentacoes) {
-        totalFatura = calcularTotalApresentacao(apre);
+        totalFatura += calcularTotalApresentacao(apre);
       }
       return totalFatura;
     }
